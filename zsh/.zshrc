@@ -46,6 +46,7 @@ fi
 unset env
 
 # aliases
+alias vprod="NVIM_APPNAME=ProdNvim nvim"
 alias ls="eza --icons=always"
 alias la="ls -a"
 alias v="nvim"
