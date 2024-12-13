@@ -13,6 +13,7 @@ fi
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export TMUX_CONF="$HOME/.config/tmux/tmux.conf"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 
 # Zinit
@@ -130,4 +131,3 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
-
