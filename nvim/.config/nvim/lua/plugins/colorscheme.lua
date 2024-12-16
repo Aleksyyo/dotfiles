@@ -2,57 +2,60 @@ return {
   {
     "dgox16/oldworld.nvim",
     lazy = true,
-    priority = 1000
+    priority = 1000,
   },
   {
-    "rebelot/kanagawa.nvim"
+    "rebelot/kanagawa.nvim",
   },
   {
-    "rose-pine/neovim"
+    "rose-pine/neovim",
   },
   {
-    "sainnhe/gruvbox-material"
+    "sainnhe/gruvbox-material",
   },
   {
-    "scottmckendry/cyberdream.nvim"
+    "scottmckendry/cyberdream.nvim",
   },
   {
-    "shaunsingh/nord.nvim"
+    "shaunsingh/nord.nvim",
   },
   {
-    "ribru17/bamboo.nvim"
+    "ribru17/bamboo.nvim",
   },
   {
-    "maxmx03/fluoromachine.nvim"
+    "maxmx03/fluoromachine.nvim",
   },
   {
-    "miikanissi/modus-themes.nvim"
+    "miikanissi/modus-themes.nvim",
   },
   {
-    "olivercederborg/poimandres.nvim"
+    "olivercederborg/poimandres.nvim",
   },
   {
-    "ramojus/mellifluous.nvim"
+    "ramojus/mellifluous.nvim",
   },
   {
-    'AlexvZyl/nordic.nvim'
+    "AlexvZyl/nordic.nvim",
   },
   {
-    "sainnhe/edge"
+    "sainnhe/edge",
   },
   {
-    "bluz71/vim-moonfly-colors"
+    "bluz71/vim-moonfly-colors",
   },
   {
-    "0xstepit/flow.nvim"
+    "0xstepit/flow.nvim",
   },
   {
-    "oxfist/night-owl.nvim"
+    "oxfist/night-owl.nvim",
   },
   {
-    "luisiacc/gruvbox-baby"
+    "luisiacc/gruvbox-baby",
   },
   {
-    "shaunsingh/moonlight.nvim"
+    "shaunsingh/moonlight.nvim",
+  },
+  {
+    "EdenEast/nightfox.nvim",
   },
 }
