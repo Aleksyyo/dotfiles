@@ -32,10 +32,10 @@ require("lazy").setup({
         -- colorscheme = "edge",
         -- colorscheme = "moonfly",
         -- colorscheme = "night-owl",
-        -- colorscheme = "oldworld",
+        colorscheme = "oldworld",
         -- colorscheme = "nordfox",
         -- colorscheme = "zaibatsu",
-        colorscheme = "rose-pine",
+        -- colorscheme = "rose-pine",
       },
     },
     -- import/override with your plugins
