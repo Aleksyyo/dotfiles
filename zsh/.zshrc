@@ -23,6 +23,10 @@ if [ ! -d "$ZINIT_HOME" ]; then
   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
+# Add bun to ~/.zshrc
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # SSH-Agent
 env=~/.ssh/agent.env
 
@@ -53,7 +57,7 @@ alias la="ls -a"
 alias v="nvim"
 alias c="clear;ls"
 alias conf="cd ~/.config"
-alias wez="cd /mnt/c/Users/aleks/"
+alias wez="v /mnt/c/Users/aleks/.wezterm.lua"
 # alias wezterm="/mnt/c/Program Files/WezTerm/wezterm.exe"
 
 
