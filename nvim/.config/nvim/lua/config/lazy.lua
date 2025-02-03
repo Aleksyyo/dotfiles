@@ -25,6 +25,7 @@ require("lazy").setup({
         -- colorscheme = "nordic",
         -- colorscheme = "fluoromachine",
         -- colorscheme = "kanagawa-dragon",
+        -- colorscheme = "kanagawa-wave",
         -- colorscheme = "kanagawa-lotus",
         -- colorscheme = "gruvbox-baby",
         -- colorscheme = "mellifluous",

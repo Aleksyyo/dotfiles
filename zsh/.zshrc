@@ -3,9 +3,9 @@
 # confirmations, etc.) must go above this block; everything else may go below.
 
 # Powerlevel10k config
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -14,6 +14,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export TMUX_CONF="$HOME/.config/tmux/tmux.conf"
 export XDG_CONFIG_HOME="$HOME/.config"
+export ZSH="$HOME/.oh-my-zsh"
 
 
 # Zinit
@@ -50,16 +51,6 @@ fi
 
 unset env
 
-# aliases
-alias vprod="NVIM_APPNAME=ProdNvim nvim"
-alias ls="eza --icons=always"
-alias la="ls -a"
-alias v="nvim"
-alias c="clear;ls"
-alias conf="cd ~/.config"
-alias wez="v /mnt/c/Users/aleks/.wezterm.lua"
-# alias wezterm="/mnt/c/Program Files/WezTerm/wezterm.exe"
-
 
 
 
@@ -68,6 +59,23 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 #----------------------------------------------------------------
 # Prompt Themes
+
+# ZSH_THEME="robbyrussell"
+# plugins=(git)
+# source ~/.zshrc
+
+
+# zinit ice depth=1
+# zinit load ohmyzsh/ohmyzsh/
+
+ZSH_THEME="robbyrussell"
+zi snippet OMZL::async_prompt.zsh
+zi snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zi cdclear -q
+setopt promptsubst
+zi snippet OMZT::robbyrussell
+
 
 # Starship
 # zinit ice as"command" from"gh-r" \
@@ -86,11 +94,21 @@ source "${ZINIT_HOME}/zinit.zsh"
 # zinit light sindresorhus/pure
 
 # Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+# zinit ice depth=1; zinit light romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #---------------------------------------------------------------
+
+# aliases
+alias vprod="NVIM_APPNAME=ProdNvim nvim"
+alias ls="eza --icons=always"
+alias la="ls -a"
+alias v="nvim"
+alias c="clear;ls"
+alias conf="cd ~/.config"
+alias wez="v /mnt/c/Users/aleks/.wezterm.lua"
+# alias wezterm="/mnt/c/Program Files/WezTerm/wezterm.exe"
 
 # Plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -118,10 +136,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color --icons=always $realpat
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+#Customizations
+export LS_COLORS="di=38;5;208:${LS_COLORS}"
+
 # Keybindings
 bindkey '^f' autosuggest-accept
 bindkey '^p' history_search_backward
 bindkey '^n' history_search_forward
+bindkey '^I' fzf-completion
 
 # History settings
 HISTSIZE=5000
