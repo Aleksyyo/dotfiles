@@ -137,7 +137,7 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 #Customizations
-export LS_COLORS="di=38;5;208:${LS_COLORS}"
+# export LS_COLORS="di=38;5;208:${LS_COLORS}"
 
 # Keybindings
 bindkey '^f' autosuggest-accept

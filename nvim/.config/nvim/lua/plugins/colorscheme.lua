@@ -58,4 +58,13 @@ return {
   {
     "EdenEast/nightfox.nvim",
   },
+  {
+    "drewxs/ash.nvim",
+  },
+  {
+    "vague2k/vague.nvim",
+  },
+  {
+    "embark-theme/vim",
+  },
 }
