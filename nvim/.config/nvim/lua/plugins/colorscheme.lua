@@ -67,4 +67,10 @@ return {
   {
     "embark-theme/vim",
   },
+  {
+    "polirritmico/monokai-nightasty.nvim",
+  },
+  {
+    "olimorris/onedarkpro.nvim",
+  },
 }

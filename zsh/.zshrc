@@ -101,6 +101,7 @@ zi snippet OMZT::robbyrussell
 #---------------------------------------------------------------
 
 # aliases
+alias fm="cd /mnt/c/Users/aleks/Desktop/Frontend-Masters"
 alias vprod="NVIM_APPNAME=ProdNvim nvim"
 alias ls="eza --icons=always"
 alias la="ls -a"
@@ -108,6 +109,7 @@ alias v="nvim"
 alias c="clear;ls"
 alias conf="cd ~/.config"
 alias wez="v /mnt/c/Users/aleks/.wezterm.lua"
+alias pc="cd /mnt/c/Users/aleks/"
 # alias wezterm="/mnt/c/Program Files/WezTerm/wezterm.exe"
 
 # Plugins
